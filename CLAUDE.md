@@ -8,7 +8,7 @@ This is Gunvi's personal space for day-to-day to-dos, brainstorming, and design 
 - Other topic folders (e.g. `brainstorm/`, `designs/`) get created on demand — one file per topic, the first time a topic actually needs its own space, not pre-scaffolded in advance. When a new one is created, add a line to the index below.
 - `Personal/` — a leftover sample folder, not currently used by this structure.
 - `.claude/skills/today/` — the `/today` skill: reads today's daily file (creating it if missing) and reports open to-dos, carrying forward anything unfinished from the most recent prior day.
-- This folder is a git repo backed by a **private personal GitHub repo** (not a Staples repo). A scheduled cloud routine reads from that remote to power alerts, so content needs to actually be pushed to be visible to it.
+- This folder is a git repo backed by a **private personal GitHub repo** (not a Staples repo). Three scheduled cloud routines (9:30am/2:30pm/5:00pm ET, named "JARVIS ... Check-in") read from that remote to power alerts, so content needs to actually be pushed to be visible to them. They always run on the lowest-tier model (currently `claude-haiku-4-5-20251001`) — when creating or updating a scheduled routine for this workspace, keep it on the lowest available model unless told otherwise.
 
 ## Index of topic folders
 
@@ -26,6 +26,6 @@ This is Gunvi's personal space for day-to-day to-dos, brainstorming, and design 
 ## GitHub backup — push policy
 
 - This folder is a local git repo backed by a private personal GitHub remote (not a Staples repo).
-- `daily/` and `Personal/`: commit and push automatically as soon as they're updated — pre-approved, no need to ask each time.
+- `daily/`, `Personal/`, and this `CLAUDE.md` file itself: commit and push automatically as soon as they're updated — pre-approved, no need to ask each time.
 - Any other folder (e.g. `brainstorm/`, `designs/` — anything not in the pre-approved list above): once a task/edit there is done, ask me whether to push it before doing so. Don't assume. If I say yes regularly for a given folder, ask whether to add it to the pre-approved list.
 - Never point this repo at a work/Staples remote.
