@@ -23,9 +23,9 @@ This is Gunvi's personal space for day-to-day to-dos, brainstorming, and design 
 - When a brainstorm or design conversation produces something worth keeping, write it to the relevant topic file before the session ends, rather than relying on it surviving conversation compaction.
 - Prefer many small dated/topic files over one large growing log — it keeps each read cheap and lets you pull in only what's relevant to the current question.
 
-## GitHub backup — push only when explicitly asked
+## GitHub backup — push policy
 
-- This folder is a local git repo backed by a private personal GitHub remote (not a Staples repo). Do **not** commit or push automatically — only do it when I explicitly say to (e.g. "push this", "sync to github").
-- Approved folders for pushing: `daily/` and `Personal/`.
-- If a new topic folder shows up (e.g. `brainstorm/`, `designs/`) that isn't in the approved list above, ask me before including it in a push — don't assume a new folder is GitHub-bound just because it exists. Once I confirm, add it to the approved list.
+- This folder is a local git repo backed by a private personal GitHub remote (not a Staples repo).
+- `daily/` and `Personal/`: commit and push automatically as soon as they're updated — pre-approved, no need to ask each time.
+- Any other folder (e.g. `brainstorm/`, `designs/` — anything not in the pre-approved list above): once a task/edit there is done, ask me whether to push it before doing so. Don't assume. If I say yes regularly for a given folder, ask whether to add it to the pre-approved list.
 - Never point this repo at a work/Staples remote.
